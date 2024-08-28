@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- HTML document type declaration and the language used is English -->
+<head>
+    <meta charset="UTF-8"> <!-- Defines the document character set as UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Defines the viewport for creating responsive designs -->
+    <title>Sign Up</title> <!-- Title of the page to be displayed in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Links external CSS files for styling -->
+    <link rel="stylesheet" href="swiper-bundle.min.css"> <!-- Links the Swiper CSS file for the slider component -->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon"> <!-- Defines a favicon for a website -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Linking icons from Boxicons -->
+</head>
+<body>
+    <img src="img/backgroundmoviesbisa.jpg" class="background-img"> 
+    <div class="form-container">
+        <form id="signup-form" class="form" >
+            <h2>Sign Up</h2>
+            
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter your first name...">
+                <span id="firstname-error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your last name...">
+                <span id="lastname-error" class="error"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email...">
+                <span id="email-error" class="error"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter your password..." id="password" class="input-field">
+                <span id="password-error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" placeholder="Confirm your password..." id="confirm-password" class="input-field">
+                <span id="confirm-password-error" class="error"></span>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" id="submit-button">Sign Up</button>
+                <button type="reset" id="cancel-button">Cancel</button>
+            </div>
+            <p>Already have an account? <a href="signin.html">Sign In</a></p>
+            <p>Cancel Sign Up, <a href="index.html">back</a></p>
+        </form>
+        
+    </div>
+           
+    <script src="signup.js"></script> <!-- Links external JavaScript files for additional functionality -->
+</body>
+</html>
